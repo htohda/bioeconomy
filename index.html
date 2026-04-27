@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>バイオエコノミー技術士事務所</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 基本設定 */
+        :root {
+            --primary-color: #2e2e2e; /* 濃いグレー（テキスト用） */
+            --accent-color: #aabec2;  /* ブルーグレー（メイン背景） */
+            --section-bg: #ffffff;   /* セクション背景（白） */
+            --footer-bg: #2e2e2e;    /* フッター背景 */
+            --text-light: #edede7;   /* 明るいテキスト用 */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--primary-color);
+            line-height: 1.6;
+            background-color: var(--accent-color);
+        }
+
+        /* ヒーローセクション */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(rgba(170, 190, 194, 0.8), rgba(170, 190, 194, 0.8)), 
+                        url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        /* コンテンツエリア */
+        main {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--section-bg);
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* サービスカード */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: var(--footer-bg);
+            color: var(--text-light);
+            padding: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+        }
+
+        /* フッター・コンタクト */
+        footer {
+            background: var(--footer-bg);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .email-link:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>バイオエコノミー技術士事務所</h1>
+        <p>微生物育種と精密発酵の視点から、御社におけるバイオエコノミーの実現をお手伝いします。</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>
+                素材系企業に25年、バイオのスタートアップに11年参画し、一貫してバイオものづくり／バイオ製造に携わってきました。<br>
+                その経験を活かして、菌株の育種や組換え蛋白質生産系構築を受託される企業様から業務委託を受けて、<br>
+                新規顧客の開拓やプロジェクト提案をする仕組み作りを進めています。技術士として、10年以上の経験を重ねてきました。
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>サービス</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>微生物育種</h3>
+                    <p>新規案件獲得をお手伝いします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>精密発酵</h3>
+                    <p>新規アイテムの生産をお手伝いします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>バイオエコノミー</h3>
+                    <p>バイオエコノミーへの業態転換をお手伝いします。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>まずは気軽にお問い合わせください。</p>
+            <a href="mailto:htohda2026@gmail.com" class="email-link">お問い合わせはこちら</a>
+        </div>
+        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 TOHDA Hideki. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
