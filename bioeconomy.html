@@ -1,175 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>バイオエコノミー技術士事務所</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>バイオエコノミー | バイオエコノミー技術士事務所</title>
     <style>
-        /* 基本設定 */
-        :root {
-            --primary-color: #2e2e2e; /* 濃いグレー（テキスト用） */
-            --accent-color: #aabec2;  /* ブルーグレー（メイン背景） */
-            --section-bg: #ffffff;   /* セクション背景（白） */
-            --footer-bg: #2e2e2e;    /* フッター背景 */
-            --text-light: #edede7;   /* 明るいテキスト用 */
-        }
-
         body {
-            margin: 0;
-            font-family: 'Noto Sans JP', sans-serif;
-            color: var(--primary-color);
-            line-height: 1.6;
-            background-color: var(--accent-color);
-        }
-
-        /* ヒーローセクション */
-        header {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(rgba(170, 190, 194, 0.8), rgba(170, 190, 194, 0.8)), 
-                        url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 0.1em;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: var(--primary-color);
-        }
-
-        /* コンテンツエリア */
-        main {
-            max-width: 1000px;
-            margin: -50px auto 50px;
+            font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Meiryo", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 0 20px;
         }
-
-        section {
-            background: var(--section-bg);
-            padding: 60px 40px;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        h1 {
+            color: #2c5f2c;
+            border-bottom: 3px solid #2c5f2c;
+            padding-bottom: 10px;
         }
-
         h2 {
-            font-size: 2rem;
-            border-left: 5px solid var(--accent-color);
-            padding-left: 15px;
+            color: #2c5f2c;
+            margin-top: 40px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
             margin-bottom: 30px;
         }
-
-        /* サービスカード */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+        .english-section {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #f8f9f8;
+            border-left: 5px solid #2c5f2c;
         }
-
-        .service-card {
-            background: var(--footer-bg);
-            color: var(--text-light);
-            padding: 30px;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            margin-top: 0;
-            color: var(--accent-color);
-            font-size: 1.4rem;
-        }
-
-        /* フッター・コンタクト */
         footer {
-            background: var(--footer-bg);
-            color: #ffffff;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
             text-align: center;
-            padding: 60px 20px;
+            color: #666;
+            font-size: 0.9em;
         }
-
-        .contact-info {
-            margin-bottom: 20px;
-        }
-
-        .email-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-bottom: 1px solid var(--accent-color);
-        }
-
-        .email-link:hover {
-            color: #ffffff;
-            border-color: #ffffff;
-        }
-
-        /* レスポンシブ */
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            section { padding: 40px 20px; }
+        a {
+            color: #2c5f2c;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>バイオエコノミー技術士事務所</h1>
-        <p>微生物育種と精密発酵の視点から、御社におけるバイオエコノミーの実現をお手伝いします。</p>
-    </header>
+    <h1>バイオエコノミー</h1>
+    <p class="subtitle"><strong>バイオマスを基盤とした循環型経済</strong></p>
 
-    <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <p>
-                素材系企業に25年、バイオのスタートアップに11年参画し、一貫してバイオものづくり／バイオ製造に携わってきました。<br>
-                その経験を活かして、菌株の育種や組換え蛋白質生産系構築を受託される企業様から業務委託を受けて、<br>
-                新規顧客の開拓やプロジェクト提案をする仕組み作りを進めています。技術士として、10年以上の経験を重ねてきました。
-            </p>
-        </section>
+    <p>
+        バイオエコノミーは、バイオマスを基盤とした循環型経済活動やその概念のことです。<br>
+        2009年に経済協力開発機構（OECD）が提唱しました。
+    </p>
 
-        <section id="services">
-            <h2>サービス</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>微生物育種</h3>
-                    <p>新規案件獲得をお手伝いします。</p>
-                </div>
-                <div class="service-card">
-                    <h3>精密発酵</h3>
-                    <p>新規アイテムの生産をお手伝いします。</p>
-                </div>
-                <div class="service-card">
-                    <h3>バイオエコノミー</h3>
-                    <p>バイオエコノミーへの業態転換をお手伝いします。</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <p>
+        石油などの化石資源に代わり、光合成によって生産された再生可能な植物由来資源を素材や燃料の原料とすることで、<br>
+        人類の活動が地球環境に与える負荷を低減します。これはまさに、地球にやさしいフェアトレードを実現する考え方です。
+    </p>
+
+    <p>
+        地球温暖化による気候変動や、世界的な人口増加による食糧・エネルギーの枯渇といった課題に対する有望な対策として<br>期待され、
+        各国政府や国際機関が推進しています。
+    </p>
+
+    <div class="english-section">
+            Bioeconomy is a concept and term for circular economic activities based on biomass. 
+            OECD, the Organisation for Economic Co-operation and Development, proposed this term in 2009.
+        </p>
+        <p>
+            Using renewable plant-derived resources produced through photosynthesis as raw materials and fuels 
+            instead of fossil resources such as petroleum, the burden that human activities have on the global environment can be reduced. 
+            This is exactly the idea of realizing fair trade that is kind to the earth.
+        </p>
+        <p>
+            It is expected to be a promising solution to issues such as climate change caused by global warming 
+            and food and energy depletion due to global population growth, and is being promoted by governments and international organizations.
+        </p>
+    </div>
 
     <footer>
-        <div class="contact-info">
-            <p>まずは気軽にお問い合わせください。</p>
-            <a href="mailto:htohda2026@gmail.com" class="email-link">お問い合わせはこちら</a>
-        </div>
-        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 TOHDA Hideki. All Rights Reserved.</p>
+        <p>
+            <a href="https://htohda.github.io/bioeconomy/">← バイオエコノミー技術士事務所 トップページに戻る</a>
+        </p>
+        <p>
+            ご相談・お問い合わせ：<a href="mailto:htohda2026@gmail.com">htohda2026@gmail.com</a>
+        </p>
+        <p>2024年8月4日 公開</p>
     </footer>
 
 </body>
