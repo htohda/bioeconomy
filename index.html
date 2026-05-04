@@ -115,6 +115,7 @@ h2 {
     background: var(--footer-bg);
     color: var(--text-light);
     padding: 30px;
+    text-align: center;
     border-radius: 12px;
     transition: transform 0.3s ease;
 }
@@ -135,18 +136,22 @@ h2 {
         }
 
         /* サイト上のすべての <a> タグに適用する */
-        a {
+        a:link {
+            color: var(--text-light);
             text-decoration: none;
         }
 
         /* 訪問済みリンクの色を変更しない */
         a:visited {
             color: var(--text-light);
+            text-decoration: none;
         }
 
         /* マウスホバー時のみ薄い水色に変化 */
         a:hover {
             color: #33ccff;
+            text-decoration: none;
+
         }
         .service-link {
             font-weight: bold;
